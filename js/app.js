@@ -230,7 +230,7 @@ let firstLast = [];
 // Complete the exercise in the space below:
 
 firstLast = people.map((name) => {
-  [last, first] = name.split(", ");
+  const [last, first] = name.split(", ");
   return `${first} ${last}`;
 })
 
@@ -295,6 +295,8 @@ let isAdultPresent = null;
 
 // Complete the exercise in the space below:
 
+isAdultPresent = devs.some((dev) => dev.year <= 2007);
+
 // Check your work:
 console.log('Exercise 6 my result: ', isAdultPresent);
 console.log('Exercise 6 correct result: ', true);
@@ -316,6 +318,8 @@ let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
 
+isEveryone19OrOlder = devs.every((dev) => dev.year <= 2008);
+
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
 console.log('Exercise 7 correct result: ', false);
@@ -333,6 +337,8 @@ let commentById = {};
 
 // Complete the exercise in the space below:
 
+commentById = comments.find((comment) => comment.id === 823423);
+
 // Check your work:
 console.log('Exercise 8 my result: ', commentById);
 console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
@@ -349,6 +355,8 @@ of comment objects.
 let idx = null;
 
 // Complete the exercise in the space below:
+
+idx = comments.findIndex((comment) => comment.id === 123523);
 
 // Check your work:
 console.log('Exercise 9 my result: ', idx);
@@ -406,6 +414,8 @@ Hints:
 let travelMethodCounts = {};
 
 // Complete the exercise in the space below:
+
+
 
 // Check your work:
 console.log('Level Up 2 my result: ', travelMethodCounts);
