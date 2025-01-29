@@ -423,6 +423,7 @@ let travelMethodCounts = {};
 //   return obj;
 // }, {});
 
+// short circuiting is so cheeky
 travelMethodCounts = travelMethods.reduce((acc, val) => {
   acc[val] = (acc[val] || 0) + 1;
   return acc;
