@@ -387,6 +387,8 @@ let totalYearsLived = 0;
 
 // Complete the exercise in the space below:
 
+totalYearsLived = inventors.reduce((sum, inventor) => sum + (inventor.passed-inventor.year), 0)
+
 // Check your work:
 console.log('Level Up 1 my result: ', totalYearsLived);
 console.log('Level Up 1 correct result: ', 861);
@@ -415,7 +417,16 @@ let travelMethodCounts = {};
 
 // Complete the exercise in the space below:
 
+// travelMethodCounts = travelMethods.reduce((obj, travelMethod) => {
+//   if (!obj[travelMethod]) { obj[travelMethod] = 1; }
+//   else obj[travelMethod] += 1;
+//   return obj;
+// }, {});
 
+travelMethodCounts = travelMethods.reduce((acc, val) => {
+  acc[val] = (acc[val] || 0) + 1;
+  return acc;
+}, {})
 
 // Check your work:
 console.log('Level Up 2 my result: ', travelMethodCounts);
