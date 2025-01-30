@@ -295,7 +295,7 @@ let isAdultPresent = null;
 
 // Complete the exercise in the space below:
 
-isAdultPresent = devs.some((dev) => dev.year <= 2007);
+isAdultPresent = devs.some((dev) => dev.year <= 2007); // Because birthdays are not provided, I'm assuming that the age increments on 1/1
 
 // Check your work:
 console.log('Exercise 6 my result: ', isAdultPresent);
@@ -318,7 +318,7 @@ let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
 
-isEveryone19OrOlder = devs.every((dev) => dev.year <= 2006);
+isEveryone19OrOlder = devs.every((dev) => dev.year <= 2006); // Because birthdays are not provided, I'm assuming that the age increments on 1/1
 
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
