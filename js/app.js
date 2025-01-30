@@ -318,7 +318,7 @@ let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
 
-isEveryone19OrOlder = devs.every((dev) => dev.year <= 2008);
+isEveryone19OrOlder = devs.every((dev) => dev.year <= 2006);
 
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
